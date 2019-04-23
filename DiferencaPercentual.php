@@ -1,14 +1,18 @@
-// Funcao pronta para Diferenca percentual
+<?php 
 
-public function getPorcentagem()
-{
+    // Funcao pronta para Diferenca percentual
 
-    $valorInicial = $this->valorAssistencia;
-    $valorFinal = $this->valorShowroom;
+    public function getPorcentagem()
+    {
 
-    if($valorInicial > $valorFinal):
-        return ($valorInicial - $valorFinal)*100/$valorInicial . "%";
-    else:
-        return ($valorFinal - $valorInicial)*100/$valorInicial . "%";
-    endif;
-}
+        $valorInicial = $this->valorAssistencia;
+        $valorFinal = $this->valorShowroom;
+
+        if($valorInicial > $valorFinal):
+            return ($valorInicial - $valorFinal)*100/$valorInicial . "%";
+        else:
+            return ($valorFinal - $valorInicial)*100/$valorInicial . "%";
+        endif;
+    }
+
+?>
